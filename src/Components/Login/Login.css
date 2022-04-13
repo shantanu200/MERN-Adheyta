@@ -1,0 +1,93 @@
+.lBlock{
+    height: 80vh;
+    width: 50vw;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.lBlock .lLeft{
+    height: 80vh;
+    width: 25vw;
+}
+
+.lBlock .lRight{
+    height: 80vh;
+    width: 25vw;
+    background: #8A2BE2;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lRight img{
+   width: 18vw;
+}
+
+.lLeft{
+    height: 60vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lLeft .lTittle{
+    height: 15vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vmax;
+    font-weight: bold;
+}
+
+.lLeft .lForm{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lForm form{
+    display: flex;
+    flex-direction: column;
+}
+
+.lForm form input{
+    margin-top: 25px;
+    width: 20vw;
+    padding: 15px;
+    font-size: 0.8vmax;
+    font-weight: bold;
+}
+
+form input:focus{
+    outline: none;
+}
+
+.lForm form button{
+    margin-top: 30px;
+    width: 20vw;
+    padding: 10px;
+    background: #8A2BE2;
+    color: white;
+    font-size: 1vmax;
+}
+
+.lLeft .lFooter{
+    height:15vh;
+    width:25vw;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 1vmax;
+}
+
+.lFooter a{
+    color: black;
+    text-decoration: none;
+}
