@@ -16,7 +16,12 @@ const CollegeDetails = ({nextStep,handleFormData,value}) => {
   const postData = () => {
     axios.post("http://localhost:5000/register",value)
     .then((res) => {
-       console.log(res);
+      Swal.fire({
+        title: res.data.title,
+        text: res.data.text,
+        icon: res.data.icon,
+        confirmButtonText: res.data.confirmButtonText
+       });
     })
   }
   const submitForm = (e) => {
@@ -32,12 +37,6 @@ const CollegeDetails = ({nextStep,handleFormData,value}) => {
        });
      }else{
        if(checkDiv(value.division)){
-        Swal.fire({
-          title: 'Success',
-          text: 'College Details Add Successfully',
-          icon: 'success',
-          confirmButtonText: 'Next'
-         })
          postData();
        }else{
         Swal.fire({

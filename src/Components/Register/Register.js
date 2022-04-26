@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import './Register.css';
-import { useNavigate } from 'react-router-dom';
 import register from './images/register.png'
 import PersonalDetails from './Forms/PersonalDetails';
 import CollegeDetails from './Forms/CollegeDetails';
+import PersonalMobile from './Forms/PersonalMobile';
 
 const Register = () => {
   const [step,setStep]  = useState(1);
@@ -35,22 +35,37 @@ const Register = () => {
   }
 
   const renderPC = () => {
+    const choice = step+1;
+    switch(choice){
+      case 1:
+        return <PersonalDetails nextStep={nextStep} handleFormData={hanelInputData} value={formData} />;
+      
+      case 2:
+        return <CollegeDetails nextStep={nextStep} handleFormData={hanelInputData} value={formData}  />;
+    }
+  }
+
+  const renderMOBILE = () => {
     const choice = step;
     switch(choice){
       case 1:
-        return <PersonalDetails nextStep={nextStep} handleFormData={hanelInputData} value={formData} />
-      
-      case 2:
-        return <CollegeDetails nextStep={nextStep} handleFormData={hanelInputData} value={formData}  />
+        return <PersonalMobile nextStep={nextStep} handleFormData={hanelInputData} value={formData}/>
     }
   }
   return(
+    <>
+    <div className='registerPC'>
     <div className='rBlock'>
       <div className='rLeft'>
           <img src={register} />
       </div>
       {renderPC()}
     </div>
+    </div>
+    <div className='registerMOB'>
+    {renderMOBILE()}
+    </div>
+    </>
   )
 };
 

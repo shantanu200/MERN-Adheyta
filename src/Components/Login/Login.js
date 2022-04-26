@@ -37,6 +37,7 @@ const Login = () => {
     postData();
   }
   return (
+    <div className='login'>
     <div className="lBlock">
         <div className="lLeft">
         <div className="lTittle">
@@ -56,6 +57,7 @@ const Login = () => {
         <div className="lRight">
             <img src={login} />
         </div>
+    </div>
     </div>
   )
 }

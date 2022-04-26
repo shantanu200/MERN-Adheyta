@@ -6,7 +6,6 @@ import PasswordValidator from "password-validator";
 
 const PersonalDetails = ({nextStep,handleFormData,value}) => {
   const schema = new PasswordValidator();
-
   schema
    .is().min(8)
    .is().max(100)
@@ -14,7 +13,6 @@ const PersonalDetails = ({nextStep,handleFormData,value}) => {
    .has().lowercase()
    .has().digits(1)
    .has().not().spaces();
-
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -44,6 +42,7 @@ const PersonalDetails = ({nextStep,handleFormData,value}) => {
     }
   }
   return (
+    <>
     <div className="rRight">
       <div className="rPTittle">
         <h1>Personal Details</h1>
@@ -65,7 +64,8 @@ const PersonalDetails = ({nextStep,handleFormData,value}) => {
           Existing User ?<a href="/login"> Login Here</a>
         </h4>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 

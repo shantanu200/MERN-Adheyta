@@ -1,8 +1,15 @@
+.login{
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .lBlock{
     height: 80vh;
     width: 50vw;
     background: white;
-    border-radius: 5px;
     display: flex;
 }
 
@@ -15,7 +22,6 @@
     height: 80vh;
     width: 25vw;
     background: #8A2BE2;
-    border-radius: 5px 5px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +38,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .lLeft .lTittle{
@@ -90,4 +97,11 @@ form input:focus{
 .lFooter a{
     color: black;
     text-decoration: none;
+}
+
+@media only screen and (max-width:850px){
+    .lBlock{
+        display: none;
+    }
+
 }
