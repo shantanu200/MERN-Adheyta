@@ -1,20 +1,18 @@
 import React from 'react'
-import '../Style.css';
 
-const HomeSection = () => {
+const InformationSection = () => {
   return (
-    <section className='home'>
-        <div className='image'>
-            <img src='images/main.svg' alt=""/>
-        </div>
-
+       <section className='home'>
         <div className='content'>
             <h3>Welcome to Adheyta</h3>
             <p>Online Educational Platform</p>
             <a href='/register' className='btn'>Get Started</a>
         </div>
+        <div className='image'>
+            <img src='images/section2.svg' alt=""/>
+        </div>
     </section>
   )
 }
 
-export default HomeSection
+export default InformationSection

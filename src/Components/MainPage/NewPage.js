@@ -3,6 +3,7 @@ import Navbar from "./SubComponents/Navbar"
 import HomeSection from './SubComponents/HomeSection'
 import Cards from './SubComponents/Cards';
 import Footer from './SubComponents/Footer';
+import InformationSection from './SubComponents/InformationSection';
 
 const NewPage = () => {
   return (
@@ -10,6 +11,7 @@ const NewPage = () => {
     <Navbar />
     <HomeSection />
     <Cards />
+    {/* <InformationSection /> */}
     <Footer />
     </>
   )

@@ -35,7 +35,7 @@ const Register = () => {
   }
 
   const renderPC = () => {
-    const choice = step+1;
+    const choice = step;
     switch(choice){
       case 1:
         return <PersonalDetails nextStep={nextStep} handleFormData={hanelInputData} value={formData} />;
