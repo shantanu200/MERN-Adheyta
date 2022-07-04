@@ -5,10 +5,10 @@ import Cards from './SubComponents/Cards';
 import Footer from './SubComponents/Footer';
 import InformationSection from './SubComponents/InformationSection';
 
-const NewPage = () => {
+const NewPage = ({user}) => {
   return (
     <>
-    <Navbar />
+    <Navbar user={user} />
     <HomeSection />
     <Cards />
     {/* <InformationSection /> */}

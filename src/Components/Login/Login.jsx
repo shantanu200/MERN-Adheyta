@@ -3,9 +3,10 @@ import './Login.css'
 import Swal from 'sweetalert2';
 import login from './images/login.png';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
-  
+const Login = ({setUser}) => {
+  const navigate = useNavigate();
   const [formData,setFormData] = useState({
     username:"",
     password:""
@@ -21,13 +22,18 @@ const Login = () => {
   const postData = () => {
     axios.post("http://localhost:5000/login",formData)
     .then((res) => {
-      Swal.fire({
+      
+      Swal.fire({ 
         title: res.data.title,
         text: res.data.text,
         icon: res.data.icon,
         confirmButtonText: res.data.confirmButtonText
       })
+      window.localStorage.setItem("loginuser",JSON.stringify(res.data.user));
+      const currUser = window.localStorage.getItem("loginuser")
+      setUser(JSON.parse(currUser));
     })
+    navigate("/student");
   }
 
   const handleSubmit = (e) => {

@@ -1,0 +1,39 @@
+.stud-read{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stud-row{
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stud-col h1 span{
+  margin-left: 10px;
+}
+
+.stud-col-footer{
+  height: 5vh;
+  width: 40vw;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.stud-col-icons .icon-delete{
+  color: red;
+  margin-right: 20px;
+}
+
+.stud-col-icons .icon-edit{
+  color: blue;
+}

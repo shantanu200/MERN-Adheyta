@@ -1,0 +1,68 @@
+.stud-main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stud-header{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: blue;
+    color: white;
+}
+
+.stud-form{
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+
+
+.form-class{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stud-select{
+    margin-bottom: 30px;
+}
+
+.stud-select label{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.stud-select textarea{
+    resize: vertical;
+}
+
+.stud-button button{
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    background: green;
+    color: aliceblue;
+    border:none;
+}
+
+.stud-button button:hover{
+    background: greenyellow;
+    color: black;
+}
+
+.stud-prev{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
